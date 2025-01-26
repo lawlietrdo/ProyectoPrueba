@@ -6,10 +6,10 @@ import os
 app = Flask(__name__)
 
 # Configurar la conexión a MongoDB
-MONGO_URI = "mongodb+srv://tester:ajzP2MKt5SilGEqT@cluster0.8z81e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = "mongodb+srv:"
 client = MongoClient(MONGO_URI)
 db = client['ACMEINC']  # Cambia al nombre real de tu base de datos
-collection = db['datatest']  # Cambia al nombre de tu colección
+collection = db['data']  # Cambia al nombre de tu colección
 
 @app.route('/')
 def home():
